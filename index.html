@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURY</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-black text-white">
+    <nav class="navbar" id="mainNav">
+        <div class="navbar-container">
+            <a href="index.html" class="logo">FURY</a>
+            <div class="nav-links-container">
+                <button id="menuToggle" class="menu-toggle" aria-haspopup="true" aria-expanded="false">
+                    <i data-lucide="menu"></i>
+                    <span class="sr-only">Toggle menu</span>
+                </button>
+                <ul id="navLinks" class="nav-links">
+                    <li><a href="#featured-collections" class="nav-link">Collections</a></li>
+                    <li><a href="#brand-story" class="nav-link">Our Story</a></li>
+                    <li><a href="#lookbook" class="nav-link">Lookbook</a></li>
+                    <li><a href="#social-media" class="nav-link">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="hero">
+            <img src="images/hero-bg-3000.jpg?height=1080&width=1920" alt="FURY Fashion Hero" class="hero-image">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-title-top">Unleash Your</span>
+                        <span class="hero-title-bottom">Power</span>
+                    </h1>
+                    <p class="hero-subtitle">Bold Fashion for Bold Individuals</p>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-outline" data-filter="women">Shop Women</button>
+                    <button class="btn btn-outline" data-filter="men">Shop Men</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-collections" class="featured-collections">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="collection-grid">
+                <div class="collection-item" data-category="men">
+                    <img src="images/1.jpg?height=600&width=800&text=Men's+Cosmic+Collection" alt="Men's Cosmic Collection" class="collection-image">
+                    <div class="collection-overlay">
+                        <h3 class="collection-title">Men's Cosmic Collection</h3>
+                    </div>
+                </div>
+                <div class="collection-item" data-category="women">
+                    <img src="images/2(1).jpg?height=600&width=800&text=Women's+Cosmic+Collection" alt="Women's Cosmic Collection" class="collection-image">
+                    <div class="collection-overlay">
+                        <h3 class="collection-title">Women's Cosmic Collection</h3>
+                    </div>
+                </div>
+                <div class="collection-item" data-category="men">
+                    <img src="images/10.jpg?height=600&width=800&text=Men's+Cosmic+Collection" alt="Men's Cosmic Collection" class="collection-image">
+                    <div class="collection-overlay">
+                        <h3 class="collection-title">Men's Warrior Collection</h3>
+                    </div>
+                </div>
+                <div class="collection-item" data-category="women">
+                    <img src="images/3(1).jpg?height=600&width=800&text=Women's+Cosmic+Collection" alt="Women's Cosmic Collection" class="collection-image">
+                    <div class="collection-overlay">
+                        <h3 class="collection-title">Women's Warrior Collection</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brand-story" class="brand-story">
+            <div class="story-content">
+                <h2 class="section-title">Our Story</h2>
+                <p class="story-text">
+                    FURY is more than just clothing. It's a statement of power, a declaration of individuality, and a celebration of bold self-expression.
+                </p>
+                <button class="btn btn-outline">Learn More</button>
+            </div>
+        </section>
+
+        <section id="lookbook" class="lookbook">
+            <h2 class="section-title">Lookbook</h2>
+            <div class="lookbook-container">
+                <button class="lookbook-nav lookbook-prev" aria-label="Previous lookbook item">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <div class="lookbook-slider">
+                    <div class="lookbook-item" data-category="men">
+                        <h3 class="lookbook-title">Men's Cosmic Look</h3>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="images/1.jpg?height=600&width=400&text=Men's+Look+1" alt="Men's Lookbook Image 1" class="carousel-image">
+                                <img src="images/2.jpg?height=600&width=400&text=Men's+Look+1" alt="Men's Lookbook Image 2" class="carousel-image">
+                                <img src="images/3.jpg?height=600&width=400&text=Men's+Look+1" alt="Men's Lookbook Image 3" class="carousel-image">
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="carousel-control carousel-prev" aria-label="Previous image">
+                                    <i data-lucide="chevron-left"></i>
+                                </button>
+                                <button class="carousel-control carousel-next" aria-label="Next image">
+                                    <i data-lucide="chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-category="women">
+                        <h3 class="lookbook-title">Women's Cosmic Look</h3>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="images/1(1).jpg?height=600&width=400&text=Women's+Look+1" alt="Women's Lookbook Image 1" class="carousel-image">
+                                <img src="images/2(1).jpg?height=600&width=400&text=Women's+Look+1" alt="Women's Lookbook Image 2" class="carousel-image">
+                                <img src="images/3(1).jpg?height=600&width=400&text=Women's+Look+1" alt="Women's Lookbook Image 3" class="carousel-image">
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="carousel-control carousel-prev" aria-label="Previous image">
+                                    <i data-lucide="chevron-left"></i>
+                                </button>
+                                <button class="carousel-control carousel-next" aria-label="Next image">
+                                    <i data-lucide="chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-category="men">
+                        <h3 class="lookbook-title">Men's Warrior Look</h3>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="images/4.jpg?height=600&width=400&text=Men's+Look+2" alt="Men's Lookbook Image 4" class="carousel-image">
+                                <img src="images/5.jpg?height=600&width=400&text=Men's+Look+2" alt="Men's Lookbook Image 5" class="carousel-image">
+                                <img src="images/6.jpg?height=600&width=400&text=Men's+Look+2" alt="Men's Lookbook Image 6" class="carousel-image">
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="carousel-control carousel-prev" aria-label="Previous image">
+                                    <i data-lucide="chevron-left"></i>
+                                </button>
+                                <button class="carousel-control carousel-next" aria-label="Next image">
+                                    <i data-lucide="chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-category="women">
+                        <h3 class="lookbook-title">Women's Warrior Look</h3>
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <img src="images/10.jpg?height=600&width=400&text=Women's+Look+2" alt="Women's Lookbook Image 4" class="carousel-image">
+                                <img src="images/11.jpg?height=600&width=400&text=Women's+Look+2" alt="Women's Lookbook Image 5" class="carousel-image">
+                                <img src="images/12.jpg?height=600&width=400&text=Women's+Look+2" alt="Women's Lookbook Image 6" class="carousel-image">
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="carousel-control carousel-prev" aria-label="Previous image">
+                                    <i data-lucide="chevron-left"></i>
+                                </button>
+                                <button class="carousel-control carousel-next" aria-label="Next image">
+                                    <i data-lucide="chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="lookbook-nav lookbook-next" aria-label="Next lookbook item">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="social-media" class="social-media">
+            <h2 class="section-title">Follow Us on Instagram</h2>
+            <div class="instagram-grid">
+                <a href="https://www.instagram.com/p/C_p6Y8zo6KI/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="images/1.jpg" alt="Instagram Post 1" class="instagram-image">
+                </a>
+                <a href="https://www.instagram.com/p/C_p6Y8zo6KI/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="images/1.jpg" alt="Instagram Post 2" class="instagram-image">
+                </a>
+                <a href="https://www.instagram.com/p/C_p6Y8zo6KI/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="images/1.jpg" alt="Instagram Post 3" class="instagram-image">
+                </a>
+                <a href="https://www.instagram.com/p/C_p6Y8zo6KI/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="images/1.jpg" alt="Instagram Post 4" class="instagram-image">
+                </a>
+            </div>
+            <div class="instagram-link">
+                <a href="https://www.instagram.com/fury.wear1/" class="social-link">
+                    <i data-lucide="instagram" class="social-icon"></i>
+                    @fury.wear1
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">FURY</h3>
+                <p class="footer-text">Bold Fashion for Bold Individuals</p>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#featured-collections" class="footer-link">Collections</a></li>
+                    <li><a href="#brand-story" class="footer-link">Our Story</a></li>
+                    <li><a href="#lookbook" class="footer-link">Lookbook</a></li>
+                    <li><a href="#social-media" class="footer-link">Social Media</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Facebook</a></li>
+                    <li><a href="#" class="footer-link">Instagram</a></li>
+                    <li><a href="#" class="footer-link">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" class="newsletter-input">
+                    <button type="submit" class="btn btn-newsletter">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2023 FURY Fashion. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
